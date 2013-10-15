@@ -7,9 +7,13 @@
 //
 
 #import "DetailViewController.h"
+#import "UIImage+OpenCV.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
+@property (weak, nonatomic) IBOutlet UISwitch *edgeDetectSwitch;
+@property (weak, nonatomic) IBOutlet UISlider *lowTresholdSlider;
+@property (strong, nonatomic) NSOperationQueue* imageProcessingQueue;
 - (void)configureView;
 @end
 
@@ -31,13 +35,47 @@
     }        
 }
 
+- (NSOperationQueue*) imageProcessingQueue {
+    if (!_imageProcessingQueue) {
+        _imageProcessingQueue = [[NSOperationQueue alloc] init];
+    }
+    
+    return _imageProcessingQueue;
+}
+
+- (IBAction)onLowTreshholdChanged:(id)sender {
+    [self updateImage];
+}
+
+- (IBAction)onDetectEdges:(id)sender {
+    [self updateImage];
+}
+
+
+- (void) updateImage {
+    if (self.edgeDetectSwitch.isOn) {
+        __block NSBlockOperation* operation = [NSBlockOperation blockOperationWithBlock:^{
+            if(![operation isCancelled]){
+                UIImage* edgeImage = [self.detailItem detectEdges:self.lowTresholdSlider.value ratio:3 kernelSize:3];
+                if (![operation isCancelled]) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        self.detailtItemView.image = edgeImage;
+                    });
+                }
+            }
+        }];
+        [self.imageProcessingQueue cancelAllOperations];
+        [self.imageProcessingQueue addOperation:operation];
+    } else {
+        self.detailtItemView.image = self.detailItem;
+    }
+}
+
 - (void)configureView
 {
     // Update the user interface for the detail item.
     self.detailtItemView.contentMode = UIViewContentModeScaleAspectFit;
-    if (self.detailItem) {
-        self.detailtItemView.image = self.detailItem;
-    }
+    [self updateImage];
 }
 
 - (void)viewDidLoad

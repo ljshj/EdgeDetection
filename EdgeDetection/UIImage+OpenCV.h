@@ -10,4 +10,8 @@
 
 @interface UIImage (OpenCV)
 
+- (UIImage*) detectEdges:(int) lowThreshold ratio:(int)ratio kernelSize:(int)kernelSize;
+- (cv::Mat)UIImageToCvMat;
++ (UIImage *)UIImageFromCVMat:(cv::Mat)cvMat;
+
 @end

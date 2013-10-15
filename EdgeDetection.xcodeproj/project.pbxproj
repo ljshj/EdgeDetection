@@ -29,6 +29,9 @@
 		D14DF4D6180CE866008DD974 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4D0180CE866008DD974 /* 4.jpg */; };
 		D14DF4D7180CE866008DD974 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4D1180CE866008DD974 /* 5.jpg */; };
 		D14DF4D8180CE866008DD974 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4D2180CE866008DD974 /* 6.jpg */; };
+		D14DF4DB180CF145008DD974 /* UIImage+OpenCV.m in Sources */ = {isa = PBXBuildFile; fileRef = D14DF4DA180CF145008DD974 /* UIImage+OpenCV.m */; };
+		D14DF4DC180CF145008DD974 /* UIImage+OpenCV.m in Sources */ = {isa = PBXBuildFile; fileRef = D14DF4DA180CF145008DD974 /* UIImage+OpenCV.m */; };
+		D14DF4E0180CFDDD008DD974 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14DF4DF180CFDDD008DD974 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,26 +53,29 @@
 		D14DF49A180CE80D008DD974 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D14DF49C180CE80D008DD974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D14DF49E180CE80D008DD974 /* EdgeDetection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EdgeDetection-Prefix.pch"; sourceTree = "<group>"; };
-		D14DF49F180CE80D008DD974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D14DF4A0180CE80D008DD974 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D14DF49F180CE80D008DD974 /* AppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D14DF4A0180CE80D008DD974 /* AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = AppDelegate.m; sourceTree = "<group>"; };
 		D14DF4A3180CE80D008DD974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		D14DF4A6180CE80D008DD974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		D14DF4A8180CE80D008DD974 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		D14DF4A9180CE80D008DD974 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		D14DF4AB180CE80D008DD974 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		D14DF4AC180CE80D008DD974 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D14DF4A8180CE80D008DD974 /* MasterViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		D14DF4A9180CE80D008DD974 /* MasterViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = MasterViewController.m; sourceTree = "<group>"; };
+		D14DF4AB180CE80D008DD974 /* DetailViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D14DF4AC180CE80D008DD974 /* DetailViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = DetailViewController.m; sourceTree = "<group>"; };
 		D14DF4AE180CE80D008DD974 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D14DF4B4180CE80D008DD974 /* EdgeDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdgeDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14DF4B5180CE80D008DD974 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D14DF4BD180CE80E008DD974 /* EdgeDetectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EdgeDetectionTests-Info.plist"; sourceTree = "<group>"; };
 		D14DF4BF180CE80E008DD974 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D14DF4C1180CE80E008DD974 /* EdgeDetectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdgeDetectionTests.m; sourceTree = "<group>"; };
+		D14DF4C1180CE80E008DD974 /* EdgeDetectionTests.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = EdgeDetectionTests.m; sourceTree = "<group>"; };
 		D14DF4CD180CE866008DD974 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		D14DF4CE180CE866008DD974 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		D14DF4CF180CE866008DD974 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		D14DF4D0180CE866008DD974 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		D14DF4D1180CE866008DD974 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		D14DF4D2180CE866008DD974 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		D14DF4D9180CF145008DD974 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		D14DF4DA180CF145008DD974 /* UIImage+OpenCV.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = "UIImage+OpenCV.m"; sourceTree = "<group>"; };
+		D14DF4DF180CFDDD008DD974 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = External/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14DF4E0180CFDDD008DD974 /* opencv2.framework in Frameworks */,
 				D14DF493180CE80D008DD974 /* CoreGraphics.framework in Frameworks */,
 				D14DF495180CE80D008DD974 /* UIKit.framework in Frameworks */,
 				D14DF491180CE80D008DD974 /* Foundation.framework in Frameworks */,
@@ -119,6 +126,7 @@
 		D14DF48F180CE80D008DD974 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D14DF4DF180CFDDD008DD974 /* opencv2.framework */,
 				D14DF490180CE80D008DD974 /* Foundation.framework */,
 				D14DF492180CE80D008DD974 /* CoreGraphics.framework */,
 				D14DF494180CE80D008DD974 /* UIKit.framework */,
@@ -140,6 +148,8 @@
 				D14DF4AC180CE80D008DD974 /* DetailViewController.m */,
 				D14DF4AE180CE80D008DD974 /* Images.xcassets */,
 				D14DF497180CE80D008DD974 /* Supporting Files */,
+				D14DF4D9180CF145008DD974 /* UIImage+OpenCV.h */,
+				D14DF4DA180CF145008DD974 /* UIImage+OpenCV.m */,
 			);
 			path = EdgeDetection;
 			sourceTree = "<group>";
@@ -299,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D14DF4A1180CE80D008DD974 /* AppDelegate.m in Sources */,
+				D14DF4DB180CF145008DD974 /* UIImage+OpenCV.m in Sources */,
 				D14DF4AA180CE80D008DD974 /* MasterViewController.m in Sources */,
 				D14DF49D180CE80D008DD974 /* main.m in Sources */,
 				D14DF4AD180CE80D008DD974 /* DetailViewController.m in Sources */,
@@ -309,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14DF4DC180CF145008DD974 /* UIImage+OpenCV.m in Sources */,
 				D14DF4C2180CE80E008DD974 /* EdgeDetectionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +450,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/p-kir/Work/NewStartup/ios",
+					"/Users/p-kir/Work/NewStartup/EdgeDetection/External",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EdgeDetection/EdgeDetection-Prefix.pch";
 				INFOPLIST_FILE = "EdgeDetection/EdgeDetection-Info.plist";
@@ -451,6 +468,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/p-kir/Work/NewStartup/ios",
+					"/Users/p-kir/Work/NewStartup/EdgeDetection/External",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EdgeDetection/EdgeDetection-Prefix.pch";
 				INFOPLIST_FILE = "EdgeDetection/EdgeDetection-Info.plist";
