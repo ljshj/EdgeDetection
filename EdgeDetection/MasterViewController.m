@@ -28,13 +28,14 @@
 
 - (void)viewDidLoad
 {
+    const int kExamplesCount = 6;
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+	self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+     _objects = [[NSMutableArray alloc] init];
+    
+    for (int i = 1; i <= kExamplesCount; ++i) {
+        [_objects addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", i]]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,15 +70,16 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    UIImage* object = _objects[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"Image %d", indexPath.row];
+    cell.imageView.image = object;
     return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath

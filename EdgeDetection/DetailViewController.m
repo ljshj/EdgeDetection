@@ -34,9 +34,9 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
+    self.detailtItemView.contentMode = UIViewContentModeScaleAspectFit;
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.detailtItemView.image = self.detailItem;
     }
 }
 
@@ -51,6 +51,25 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewDidLayoutSubviews {
+    /*CGSize imageSize = self.detailtItemView.image.size;
+    CGFloat aspectRatio = imageSize.width / imageSize.height;
+    CGRect frame = self.view.bounds.frame;
+    if (kMaxImageViewSize.width / aspectRatio <= kMaxImageViewSize.height) {
+        frame.size.width = kMaxImageViewSize.width;
+        frame.size.height = frame.size.width / aspectRatio;
+    } else {
+        frame.size.height = kMaxImageViewSize.height;
+        frame.size.width = frame.size.height * aspectRatio;
+    }
+    imageView.frame = frame;
+    self.detailtItemView.frame = bounds;*/
+    
+//    self.detailtItemView.frame = self.view.bounds;
+//    self.detailtItemView.center = CGPointMake(self.view.bounds.size.width*0.5, self.view.bounds.size.height*0.5);
+    
 }
 
 #pragma mark - Split view

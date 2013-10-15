@@ -23,6 +23,12 @@
 		D14DF4B8180CE80D008DD974 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14DF494180CE80D008DD974 /* UIKit.framework */; };
 		D14DF4C0180CE80E008DD974 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4BE180CE80E008DD974 /* InfoPlist.strings */; };
 		D14DF4C2180CE80E008DD974 /* EdgeDetectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14DF4C1180CE80E008DD974 /* EdgeDetectionTests.m */; };
+		D14DF4D3180CE866008DD974 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4CD180CE866008DD974 /* 1.jpg */; };
+		D14DF4D4180CE866008DD974 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4CE180CE866008DD974 /* 2.jpg */; };
+		D14DF4D5180CE866008DD974 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4CF180CE866008DD974 /* 3.jpg */; };
+		D14DF4D6180CE866008DD974 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4D0180CE866008DD974 /* 4.jpg */; };
+		D14DF4D7180CE866008DD974 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4D1180CE866008DD974 /* 5.jpg */; };
+		D14DF4D8180CE866008DD974 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14DF4D2180CE866008DD974 /* 6.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,12 @@
 		D14DF4BD180CE80E008DD974 /* EdgeDetectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EdgeDetectionTests-Info.plist"; sourceTree = "<group>"; };
 		D14DF4BF180CE80E008DD974 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D14DF4C1180CE80E008DD974 /* EdgeDetectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdgeDetectionTests.m; sourceTree = "<group>"; };
+		D14DF4CD180CE866008DD974 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		D14DF4CE180CE866008DD974 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		D14DF4CF180CE866008DD974 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		D14DF4D0180CE866008DD974 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		D14DF4D1180CE866008DD974 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		D14DF4D2180CE866008DD974 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,7 @@
 		D14DF484180CE80D008DD974 = {
 			isa = PBXGroup;
 			children = (
+				D14DF4CB180CE853008DD974 /* Resources */,
 				D14DF496180CE80D008DD974 /* EdgeDetection */,
 				D14DF4BB180CE80E008DD974 /* EdgeDetectionTests */,
 				D14DF48F180CE80D008DD974 /* Frameworks */,
@@ -158,6 +171,27 @@
 				D14DF4BE180CE80E008DD974 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D14DF4CB180CE853008DD974 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D14DF4CC180CE866008DD974 /* Examples */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D14DF4CC180CE866008DD974 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				D14DF4CD180CE866008DD974 /* 1.jpg */,
+				D14DF4CE180CE866008DD974 /* 2.jpg */,
+				D14DF4CF180CE866008DD974 /* 3.jpg */,
+				D14DF4D0180CE866008DD974 /* 4.jpg */,
+				D14DF4D1180CE866008DD974 /* 5.jpg */,
+				D14DF4D2180CE866008DD974 /* 6.jpg */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +270,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14DF4D5180CE866008DD974 /* 3.jpg in Resources */,
+				D14DF4D8180CE866008DD974 /* 6.jpg in Resources */,
 				D14DF4A7180CE80D008DD974 /* Main_iPad.storyboard in Resources */,
+				D14DF4D4180CE866008DD974 /* 2.jpg in Resources */,
+				D14DF4D6180CE866008DD974 /* 4.jpg in Resources */,
 				D14DF4AF180CE80D008DD974 /* Images.xcassets in Resources */,
+				D14DF4D3180CE866008DD974 /* 1.jpg in Resources */,
 				D14DF4A4180CE80D008DD974 /* Main_iPhone.storyboard in Resources */,
+				D14DF4D7180CE866008DD974 /* 5.jpg in Resources */,
 				D14DF49B180CE80D008DD974 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
