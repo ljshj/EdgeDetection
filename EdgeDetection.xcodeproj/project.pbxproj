@@ -452,8 +452,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/p-kir/Work/NewStartup/ios",
-					"/Users/p-kir/Work/NewStartup/EdgeDetection/External",
+					External,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EdgeDetection/EdgeDetection-Prefix.pch";
@@ -470,8 +469,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/p-kir/Work/NewStartup/ios",
-					"/Users/p-kir/Work/NewStartup/EdgeDetection/External",
+					External,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EdgeDetection/EdgeDetection-Prefix.pch";
